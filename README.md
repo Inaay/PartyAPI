@@ -130,7 +130,7 @@ This is an example from my practice-core
 
 ```php
 public function sendToNodebuffFFA(Player $player) {
-    $party = PartyManager::getInstance()->getPlayerParty($player);
+    $party = PartyAPI::getInstance()->getPlayerParty($player);
     if ($party !== null) {
         if ($party->getLeader() === $player) {
             $worldManager = Server::getInstance()->getWorldManager();
