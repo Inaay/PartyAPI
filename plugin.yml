@@ -1,0 +1,5 @@
+name: PartyAPI
+main: Inaayat\Party\PartyAPI
+version: 1.0.0
+api: 4.0.0
+author: Inaayat
