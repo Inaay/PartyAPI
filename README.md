@@ -11,43 +11,43 @@ The PartyAPI plugin provides a simple API for creating and managing parties. You
 
 ### - Returns the instance of the PartyAPI.
 ```php
-PartyAPI::getInstance();
+$partyAPI = PartyAPI::getInstance();
 ```
 
 ### - Creates a new party with the specified leader and returns it.
 ```php
-PartyAPI::createParty(Player $leader): Party
+$partyAPI->createParty(Player $leader): Party
 ```
 
 ### - Removes the specified party.
 ```php
-PartyAPI::removeParty(Party $party): void
+$partyAPI->removeParty(Party $party): void
 ```
 
 ### - Returns the party led by the specified leader, or null if no such party exists.
 ```php
-PartyAPI::getPartyByLeader(Player $leader): ?Party
+$partyAPI->getPartyByLeader(Player $leader): ?Party
 ```
 
 ### - Invites the specified player to the specified party on behalf of the specified sender.
 ```php
-PartyAPI::invitePlayer(Party $party, Player $sender, Player $player): void
+$partyAPI->invitePlayer(Party $party, Player $sender, Player $player): void
 ```
 
 ### - Accepts an invitation to join a party from the specified sender, if one exists.
 ```php
-PartyAPI::acceptInvite(Player $player, Player $sender): void
+$partyAPI->acceptInvite(Player $player, Player $sender): void
 ```
 
 ### - Removes the specified player from the specified party.
 ```php
-PartyAPI::removePlayer(Party $party, Player $player): void
+$partyAPI->removePlayer(Party $party, Player $player): void
 ```
 
 ### - Returns the party that the specified player is a member of, or null if the player is not in a party.
 
 ```php
-PartyAPI::getPlayerParty(Player $player): ?Party
+$partyAPI->getPlayerParty(Player $player): ?Party
 ```
 
 ### Creating a Party
