@@ -1,4 +1,5 @@
-## PartyAPI <img src="https://github.com/Inaay/PartyAPI/blob/main/meta/Logo.png" alt="Logo">
+## PartyAPI 
+<img src="https://github.com/Inaay/PartyAPI/blob/main/meta/Logo.png" alt="Logo">
 
 The PartyAPI plugin provides a simple and easy-to-use API for creating and managing parties in PocketMine-MP. By using the PartyAPI methods, you can easily create and manage parties in your PocketMine-MP server.
 
