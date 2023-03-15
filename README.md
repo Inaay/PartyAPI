@@ -136,7 +136,7 @@ public function sendToNodebuffFFA(Player $player) {
             $worldManager = Server::getInstance()->getWorldManager();
             $world = $worldManager->getWorldByName("nodebuff"); //nodebuff world example
             if ($world === null) {
-                $player->sendMessage(Utils::getPrefix() . TextFormat::RED . "The world 'nodebuff' does not exist.");
+                $player->sendMessage(TextFormat::RED . "The world 'nodebuff' does not exist.");
                 return;
             }
             $members = $party->getMembers();
@@ -160,7 +160,7 @@ public function sendToNodebuffFFA(Player $player) {
         $worldManager = Server::getInstance()->getWorldManager();
         $world = $worldManager->getWorldByName("nodebuff");
         if ($world === null) {
-            $player->sendMessage(Utils::getPrefix() . TextFormat::RED . "The world 'nodebuff' does not exist.");
+            $player->sendMessage(TextFormat::RED . "The world 'nodebuff' does not exist.");
             return;
         }
         $player->teleport($world->getSpawnLocation());
