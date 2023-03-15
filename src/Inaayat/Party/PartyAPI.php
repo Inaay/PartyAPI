@@ -3,9 +3,10 @@
 namespace Inaayat\Party;
 
 use pocketmine\player\Player;
+use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
-final class PartyAPI {
+class PartyAPI extends PluginBase {
 
 	private $parties = [];
 	private static $instance;

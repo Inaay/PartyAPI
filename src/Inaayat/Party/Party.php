@@ -5,7 +5,6 @@ namespace Inaayat\Party;
 use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
-
 class Party {
 
     private $leader;
