@@ -1,0 +1,13 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Inaay/PartyAPI
+build-by-default: true
+branches:
+- main
+projects:
+  PartyAPI:
+    icon: meta/Logo.png
+    path: ""
+    model: virion
+    type: library
+    lint:
+      phpstan: false
+...
