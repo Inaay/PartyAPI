@@ -5,6 +5,7 @@ namespace Inaayat\Party;
 use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
+
 class Party {
 
     private $leader;
@@ -67,6 +68,6 @@ class Party {
     }
 
     public function getPlayerByUuid($uuid): ?Player {
-		return Server::getInstance()->getPlayerByUUID($uuid);
+	return Server::getInstance()->getPlayerByUUID($uuid);
     }
 }
